@@ -1,12 +1,27 @@
 {
   "name": "inflight",
-  "description": "InFlight plugins for Claude Code",
+  "owner": {
+    "name": "InFlight",
+    "email": "support@inflight.co"
+  },
+  "metadata": {
+    "description": "Official InFlight plugin for Claude Code",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "inflight",
+      "source": "..",
       "description": "Share and collaborate on UI prototypes via InFlight",
       "version": "1.0.0",
-      "source": ".."
+      "author": {
+        "name": "InFlight"
+      },
+      "homepage": "https://inflight.co",
+      "repository": "https://github.com/InFlight-Software/inflight-claude-plugin",
+      "keywords": ["share", "prototype", "ui", "review", "collaboration"],
+      "category": "productivity",
+      "tags": ["share", "prototype", "ui", "review", "collaboration", "feedback"]
     }
   ]
 }
