@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "inflight-local": {
+    "inflight": {
       "type": "stdio",
       "command": "npx",
       "args": ["tsx", "${CLAUDE_PLUGIN_ROOT}/local-mcp/index.ts"],
