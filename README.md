@@ -6,19 +6,8 @@ This plugin allows you to share UI changes from your feature branch as interacti
 
 ## Installation
 
-### One-Command Install (Recommended)
-
 ```bash
 claude plugin marketplace add https://github.com/InFlight-Software/inflight-claude-plugin && claude plugin install inflight
-```
-
-### Manual Install
-
-Clone directly into your Claude plugins directory:
-
-```bash
-git clone https://github.com/InFlight-Software/inflight-claude-plugin.git ~/.claude/plugins/inflight
-cd ~/.claude/plugins/inflight/local-mcp && npm install
 ```
 
 ## Requirements
@@ -100,29 +89,18 @@ And these MCP tools (used internally by skills):
 
 ## Troubleshooting
 
-### "Plugin not loading"
-
-1. Ensure the plugin is in `~/.claude/plugins/inflight/`
-2. Check that `plugin.json` exists at the root
-3. Run `npm install` in the `local-mcp/` directory
-
 ### "Authentication failed"
 
 1. Run `/inflight logout` to clear cached auth
 2. Run `/inflight login` to re-authenticate
 3. Ensure you have an InFlight account at [inflight.co](https://inflight.co)
 
-## Local Development
+### Update the plugin
 
-For plugin development, you can point to local services:
-
-Create `local-mcp/.env`:
 ```bash
-INFLIGHT_URL=http://localhost:5173
-SHARE_API_URL=http://localhost:3002
+claude plugin marketplace update inflight
+claude plugin install inflight
 ```
-
-The `.mcp.json` uses `${CLAUDE_PLUGIN_ROOT}` to find the local-mcp server, so it works regardless of where the plugin is installed.
 
 ## License
 
