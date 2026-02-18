@@ -6,34 +6,25 @@ This plugin allows you to share UI changes from your feature branch as interacti
 
 ## Installation
 
-### Quick Install (Recommended)
+### One-Command Install (Recommended)
+
+```bash
+claude plugin marketplace add https://github.com/InFlight-Software/inflight-claude-plugin && claude plugin install inflight
+```
+
+### Manual Install
 
 Clone directly into your Claude plugins directory:
 
 ```bash
 git clone https://github.com/InFlight-Software/inflight-claude-plugin.git ~/.claude/plugins/inflight
-```
-
-Then install dependencies:
-
-```bash
-cd ~/.claude/plugins/inflight/local-mcp && bun install
-```
-
-### Alternative: Symlink
-
-If you want to develop the plugin or keep it elsewhere:
-
-```bash
-git clone https://github.com/InFlight-Software/inflight-claude-plugin.git ~/inflight-claude-plugin
-ln -s ~/inflight-claude-plugin ~/.claude/plugins/inflight
-cd ~/inflight-claude-plugin/local-mcp && bun install
+cd ~/.claude/plugins/inflight/local-mcp && npm install
 ```
 
 ## Requirements
 
 - [Claude Code CLI](https://claude.ai/code)
-- [Bun](https://bun.sh) runtime
+- Node.js 18+
 - An InFlight account (sign up at [inflight.co](https://inflight.co))
 
 ## Usage
@@ -109,18 +100,11 @@ And these MCP tools (used internally by skills):
 
 ## Troubleshooting
 
-### "Bun not found"
-
-Install Bun:
-```bash
-curl -fsSL https://bun.sh/install | bash
-```
-
 ### "Plugin not loading"
 
 1. Ensure the plugin is in `~/.claude/plugins/inflight/`
 2. Check that `plugin.json` exists at the root
-3. Run `bun install` in the `local-mcp/` directory
+3. Run `npm install` in the `local-mcp/` directory
 
 ### "Authentication failed"
 
