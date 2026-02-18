@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "inflight",
-      "source": "..",
+      "source": "./plugin",
       "description": "Share and collaborate on UI prototypes via InFlight",
       "version": "1.0.0",
       "author": {
