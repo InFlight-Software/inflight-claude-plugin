@@ -18,7 +18,7 @@
         "name": "InFlight"
       },
       "homepage": "https://inflight.co",
-      "repository": "https://github.com/InFlight-Software/inflight-claude-plugin",
+      "repository": "https://github.com/inflightsoftware/inflight-claude-plugin",
       "keywords": ["share", "prototype", "ui", "review", "collaboration"],
       "category": "productivity",
       "tags": ["share", "prototype", "ui", "review", "collaboration", "feedback"]

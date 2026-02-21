@@ -7,7 +7,7 @@ This plugin allows you to share UI changes from your feature branch as interacti
 ## Installation
 
 ```bash
-claude plugin marketplace add https://github.com/InFlight-Software/inflight-claude-plugin && claude plugin install inflight
+claude plugin marketplace add https://github.com/inflightsoftware/inflight-claude-plugin && claude plugin install inflight
 ```
 
 ## Requirements
